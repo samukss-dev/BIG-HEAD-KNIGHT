@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 478091629}
   - component: {fileID: 478091633}
   - component: {fileID: 478091632}
+  - component: {fileID: 478091634}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -281,7 +282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478091628}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 56.73821, y: 0.00003, z: -825.80835}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -289,7 +290,7 @@ Transform:
   - {fileID: 1744757486}
   - {fileID: 1476610695}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &478091632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,6 +422,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 5
+--- !u!143 &478091634
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478091628}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.98
+  m_Radius: 0.52
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.06, z: 0}
 --- !u!1 &708416252
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,13 +773,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476610692}
   serializedVersion: 2
-  m_LocalRotation: {x: -1.1868546e-15, y: -0.96675336, z: 0.25571078, w: -4.4870833e-15}
-  m_LocalPosition: {x: 0, y: 3.2940001, z: 4}
+  m_LocalRotation: {x: 0.25571078, y: -4.4870833e-15, z: 1.1868546e-15, w: 0.96675336}
+  m_LocalPosition: {x: 0, y: 3.2940001, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 478091630}
-  m_LocalEulerAnglesHint: {x: 14.114, y: 359.831, z: -0.239}
+  m_LocalEulerAnglesHint: {x: 29.631, y: 0.03, z: 0}
 --- !u!114 &1476610696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,14 +1143,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744757485}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.044, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 909188569}
   m_Father: {fileID: 478091630}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &1744757488
 CharacterController:
   m_ObjectHideFlags: 0
